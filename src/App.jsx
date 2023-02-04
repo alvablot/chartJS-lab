@@ -61,7 +61,6 @@ function App() {
           label: "Users Gained ",
           data: Data.map((data) => data.userGain),
           backgroundColor: [
-            "rgba(75,192,192,0.1)",
             "#c04bbc",
             "#f4c003",
             "#00ff11",
@@ -81,8 +80,8 @@ function App() {
       Antal CD: {cdAmount} <br />
       Antal DVD: {dvdAmount} <br />
       Antal LP: {lpAmount} <br />
-      <PieChart chartData={chartData} />
-      <BarChart chartData={chartData} />
+      <PieChart chartData={chartData} headline={"Mediatype statistics"} />
+      <BarChart chartData={chartData} headline={"Mediatype statistics"} />
     </div>
   )
 }
